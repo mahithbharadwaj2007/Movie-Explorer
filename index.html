@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1 class="title">Movie Explorer</h1>
+    <div class="container">
+      <form action="">
+        <div class="input_container">
+          <p>Enter Movie Name</p>
+          <div class="search">
+            <input type="text" placeholder="Enter name" id="movieInput" />
+            <button class="button">search</button>
+          </div>
+        </div>
+      </form>
+      <div class="output">
+        <div class="poster">
+          <img src="default_poster.jpg" alt="" id="img" />
+        </div>
+        <div class="info">
+          <ul>
+            <li>
+              <h3>
+                Title :
+                <span id="title" class="details"> </span>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                Released :
+                <span id="released" class="details"></span>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                IMDB Rating :
+                <span id="imdb" class="details"></span>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                Genre :
+                <span id="genre" class="details"></span>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                Actors :
+                <span id="actors" class="details"></span>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                Plot :
+                <span id="plot" class="details"></span>
+              </h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+.title {
+  margin-bottom: 1rem;
+}
+.container {
+  height: 80vh;
+  width: 60vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.input_container {
+  margin: 1rem 0 1rem 1rem;
+}
+
+.input_container p {
+  margin-left: 0.5rem;
+  font-size: 17px;
+  font-weight: 500;
+}
+.search {
+  display: flex;
+  flex-direction: row;
+}
+
+form input {
+  border: 2px solid lightgrey;
+  padding-left: 0.5rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  width: 80%;
+  outline: none;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+.button {
+  height: 2.2rem;
+  width: 10%;
+  outline: none;
+  margin-left: 1.7rem;
+  background-color: rgb(212, 68, 68);
+  color: aliceblue;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 85%;
+}
+
+.output {
+  height: 100%;
+  display: flex;
+}
+
+.poster {
+  height: 73%;
+  width: 40%;
+  border-radius: 0.7rem;
+  margin: 1rem 2rem 1rem 1.5rem;
+  flex-shrink: 0;
+}
+.poster img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.7rem;
+}
+.info {
+  margin: 1rem 2rem 1rem 1rem;
+}
+.info li {
+  margin: 1rem 2rem 1rem 0;
+  list-style-type: none;
+}
+
+.details {
+  font-size: 17px;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90vw;
+    height: auto;
+  }
+
+  .output {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .poster {
+    width: 80%;
+    height: auto;
+  }
+
+  .info {
+    width: 90%;
+  }
+
+  .search {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
